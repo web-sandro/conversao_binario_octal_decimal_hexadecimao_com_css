@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Bases Numéricas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+        <div class="header">
+          <h1>litoralnortesoftware.com.br</h1>
+          <h2>Conversor de Bases Numéricas</h2>
+        </div>
+        <div class="limpar">
+          <button class="btn" type="button" onclick="limparTudo()" id="btnLimpar">Limpar Tudo</button>
+        </div>
+    </header>
+    <main>
+      <div class="container-flex">
+        <div>
+          <div>
+            <label for="decimal">Decimal:</label>
+            <input type="number" id="decimal" placeholder="Ex: 255,2502"><br>
+            <label for="binario">Binário:</label>
+            <input type="text" id="binario" placeholder="Ex: 1111.1111"><br>
+            <label for="octal">Octal:</label>
+            <input type="text" id="octal" placeholder="Ex: 377.525"><br>
+            <label for="hex">Hexadecimal:</label>
+            <input type="text" id="hex" placeholder="Ex: FF.FF"><br>
+          </div>
+          <div>
+            <button onclick="decimalParaHex()">Decimal → Hexadecimal</button>
+            <button onclick="hexParaDecimal()">Hexadecimal → Decimal</button><br>
+            <button onclick="decimalParaBinario()">Decimal → Binário</button>
+            <button onclick="binarioParaDecimal()">Binário → Decimal</button><br>
+            <button onclick="decimalParaOctal()">Decimal → Octal</button>
+            <button onclick="octalParaDecimal()">Octal → Decimal</button><br>
+            <button onclick="binarioParaHex()">Binário → Hexadecimal</button>
+            <button onclick="hexParaBinario()">Hexadecimal → Binário</button><br>
+            <button onclick="binarioParaOctal()">Binário → Octal</button>
+            <button onclick="octalParaBinario()">Octal → Binário</button><br>
+            <button onclick="octalParaHexadecimal()">Octal → Hexadecimal</button>
+            <button onclick="hexParaOctal()">Hexadecimal → Octal</button><br>
+          </div>
+        </div>
+        <div>
+          <h3>Resultado da Conversão</h3>
+          <div class="result" id="resultado"></div>
+          <h3>Pássos da Conversão</h3>
+          <div class="passos" id="passos"></div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Contatos</h3>
+          <ul>
+            <li>Telefone: (12) 99148-5333</li>
+            <li>
+              <a href="https://wa.me/5512991485333" target="_blank">
+                <img src="img/whats.gif" alt="WhatsApp" class="footer-icon">
+              </a>
+            </li>
+            <h3>CG3034381</h3>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>E-mails</h3>
+          <ul>
+            <li>litoralnortesoftware@hotmail.com</li>
+            <li>litoralnortesoftware@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Endereço</h3>
+          <ul>
+            <li>Rua Maria Fernandes de Moura, Nº 120</li>
+            <li>Bairro Jardim Progresso</li>
+            <li>Caraguatatuba - SP, CEP 11674-760</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2024 litoralnortesoftware.com.br | Todos os direitos reservados
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

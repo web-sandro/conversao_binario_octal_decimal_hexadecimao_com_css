@@ -1,3 +1,4 @@
+/* ======== ESTILO BASE ======== */
 body {
   background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
   color: white;
@@ -5,64 +6,75 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container {
   width: 95%;
   max-width: 1100px;
   background: rgba(15, 15, 30, 0.95);
-  padding: 0px;
+  padding: 0;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
   display: inline-block;
+  margin: 10px auto;
 }
+
 header {
-    background: linear-gradient(90deg, #00f7ff, #0066ff);
-    text-align: center;
-    padding: 0px;
-    border-radius: 20px 20px 0px 0px;
-}
-.header h1 {
   background: linear-gradient(90deg, #00f7ff, #0066ff);
-    font-size: 2rem;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 20px;
-    color: #0a0a0a;
-    text-shadow: 0 0 10px #00f7ff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
 }
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #0a0a0a;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
 header h2 {
-  background: linear-gradient(90deg, #00f7ff, #0066ff);
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-top: 8px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 8px;
 }
+
 .container-flex {
   display: flex;
-  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
-.container-block {
-  display: block;
-  height: 550px;
-}
+
 .result {
   width: 100%;
-  height: 20px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #facc15;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 5px;
 }
+
 .passos {
   width: 380px;
-  margin: 5px;
-  background: #0f172a;
+  margin: 10px auto;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  color: #38bdf8;
+  text-align: left;
+  font-size: 0.95em;
 }
-.limpar {
-  width: 215px;
-  left: 0%;
-}
+
 label {
   display: block;
   margin-top: 10px;
   font-size: 0.9em;
   color: #a3a3a3;
 }
+
 input[type="text"],
 input[type="number"] {
   width: 80%;
@@ -76,17 +88,19 @@ input[type="number"] {
   text-align: center;
   transition: 0.3s;
 }
-input[type="text"]:focus {
+
+input:focus {
   outline: none;
   border-color: #9c27b0;
   box-shadow: 0 0 10px #9c27b0;
 }
+
 button {
   background: linear-gradient(90deg, #00f5ff, #9c27b0);
   border: none;
   color: #fff;
   width: 215px;
-  height: 38px;
+  height: 42px;
   margin: 5px;
   border-radius: 12px;
   font-size: 1rem;
@@ -94,69 +108,56 @@ button {
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
 }
+
 button:hover {
   transform: scale(1.08);
   box-shadow: 0 0 15px rgba(156, 39, 176, 0.8);
 }
-.result {
-  margin-top: 20px;
-  font-size: 1.1em;
-  color: #facc15;
-  background: rgba(255,255,255,0.05);
-  padding: 10px;
-  border-radius: 5px;
-}
-.passos {
-  margin-top: 20px;
-  text-align: left;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 10px;
-  border-radius: 5px;
-  color: #38bdf8;
-  font-size: 0.95em;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+/* ======== RODAPÉ ======== */
 footer {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #f0f0f0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10px 20px 10px;
+  padding: 10px 20px;
   text-align: left;
   border-top: 2px solid #00ffe7;
 }
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  height: auto;
   justify-content: space-between;
   gap: 20px;
 }
+
 .footer-column h3 {
-  font-size: 1rem; /* menor tamanho do título */
-  margin-bottom: 5px;
-  margin-top: 5px;
+  font-size: 1rem;
+  margin: 5px 0;
   color: #00ffe7;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-column ul li {
-  margin-bottom: 5px; /* menor espaçamento entre itens */
+  margin-bottom: 5px;
   font-size: 0.9rem;
 }
+
 .footer-icon {
-  width: 20px; /* ícone menor */
+  width: 20px;
   vertical-align: middle;
   transition: transform 0.3s;
 }
+
 .footer-icon:hover {
   transform: scale(1.2);
 }
+
 .footer-bottom {
   text-align: center;
   padding-top: 10px;
@@ -164,17 +165,8 @@ footer {
   font-size: 0.8rem;
   color: #ccc;
 }
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .footer-column {
-    margin-bottom: 15px;
-  }
-}
-
+/* ======== RESPONSIVIDADE ======== */
 @media (max-width: 1024px) {
   header h1 {
     font-size: 1.7rem;

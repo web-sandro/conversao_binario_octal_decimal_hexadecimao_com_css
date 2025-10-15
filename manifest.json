@@ -1,0 +1,25 @@
+{
+  "name": "Litoral Norte Software",
+  "short_name": "Sandro snake",
+  "start_url": "https://snake-ahom.onrender.com",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "./icons/icon-192x192.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./icons/icon-512x512.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./icons/sandro.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    }
+  ]
+}

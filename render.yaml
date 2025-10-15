@@ -1,0 +1,7 @@
+services:
+  - type: static
+    name: conversao-binario-octal-decimal-hexadecimal
+    repo: https://github.com/web-sandro/conversao_binario_octal_decimal_hexadecimao_com_css
+    branch: master
+    buildCommand: ""
+    publishPath: "."
